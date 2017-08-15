@@ -1,5 +1,4 @@
 #coding='utf-8'
-import mysql	
 from flask import (
 	Flask,
 	render_template,
@@ -34,7 +33,9 @@ user login action
 '''
 @app.route('/login', methods = ['get', 'post'])
 def login():
+	print('asdfa')
 	if (request.method == 'post'):
+		return 'asfa'
 		loginAct()
 	else:
 		return render_template('login.html')
